@@ -4,5 +4,44 @@
 body{  
     background-color: #FBF7EE;
     font-family: 'Poppins', sans-serif;
-    padding: 5px 20px;
+    padding: 5px 10%;
+}
+#parent{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 23% 23% 23% 23%;
+    justify-content: space-between;
+
+}
+.card{
+    box-sizing: border-box;
+    padding: 15px;
+    
+    border: 1px solid rgb(206, 202, 202);
+    background-color: rgb(250, 252, 253);
+}
+.card img{
+    width: 27px;
+}
+.card h5{
+    margin-top:0px ;
+    margin-bottom: 0px;
+}
+.card p{
+    font-size: 11px;
+    color: darkgray;
+}
+@media only screen and (max-width: 500px){
+    #parent{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 46% 46%;
+        justify-content: space-between;
+    
+    }
+    .card{
+        margin-bottom: 28px;
+    }
+
+
 }
