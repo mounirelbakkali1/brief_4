@@ -4,5 +4,101 @@
 body{  
     background-color: #FBF7EE;
     font-family: 'Poppins', sans-serif;
-    padding: 5px 20px;
+    padding: 5px 10%;
+}
+header{
+    width: 100%;
+    display: flex;
+    color: #13366D;
+    
+}
+header > * {
+    align-self: center;
+    flex-basis: 30%;
+    text-align: center;
+}
+nav{
+    flex-basis: 40%;
+}
+header .callToAction{
+    text-align: end;
+    color: grey;
+}
+header .callToAction a{
+    text-decoration: none;
+    margin-right: 10px;
+}
+header .callToAction button{
+    border: none;
+    background-color: #0B48A8;
+    font-weight: bold;
+    box-shadow: 2px 2px #13366D;
+    color: white;
+    padding: 10px;
+}
+nav ul {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    flex-grow: 1;
+    margin: 0px;
+    padding: 0px;
+}
+nav ul li {
+    list-style-type: none;
+    font-weight: bold;
+  
+}
+nav ul li a {
+    text-decoration: none;
+    font-weight: inherit;
+    color: inherit;
+}
+
+@media only screen and (max-width:900px) {
+    body{
+        padding: 5px 5%;
+    }
+    nav{
+        flex-basis: 70%;
+    }
+    header .callToAction{
+        display: none;
+    }
+
+    
+}
+@media only screen and (max-width:500px) {
+    body{
+        padding: 0;
+        margin: 0;
+    }
+    body > div ,body > section{
+        padding: 0px 5%;
+    }
+    header{
+        flex-wrap: wrap;
+    }
+    nav{
+        flex-basis: 100%;
+    }
+    nav ul {
+        background-color: #0B48A8;
+
+    }
+    nav ul li{
+        padding: 10px;
+        color: white;
+        font-weight: normal;
+    }
+    nav ul li :hover{
+        color: #ffe5aa;
+    }
+    div#logo{
+        flex-basis: 100%;
+        margin-bottom: 10px;
+    }
+    
+
+    
 }
