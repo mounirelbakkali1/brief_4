@@ -145,3 +145,103 @@ h4{
 
 
 
+.btn-try{
+    background-color:rgb(51, 51, 180);
+    border:1px solid black;
+    padding: 1vh 1vw;
+    font-size: 10px;
+    box-shadow: 1px 1px 4px #0a0a0a;
+    border-radius: 2px;
+
+    color: #FFF;
+
+}
+.section-1{
+    display: flex;
+    /* flex-flow: wrap; */
+    justify-content: space-between;
+    padding-top: 4%;
+    
+}
+
+.left-side div h1 {
+    /* font-size: 23px; */
+    font-size: 2.5vw;
+    color:#13366D ;
+    margin: 5px;
+}
+.par{
+    color: #A2A2A2;
+    font-size:1.5vw;
+    
+}
+.check-mark-2{
+    margin-left: 20px;
+}
+.section-1 .left-side{
+    align-self: center;
+    line-height: 1.6;
+    font-size: 12px;
+    width:43%;
+}
+.section-1 .left-side div {
+    width: 100%;
+
+}
+.section-1 .left-side form{
+    align-items: center;
+}
+.section-1 .left-side form .pass{
+     padding: 0.7vh 1.5vw;
+}
+.section-1 .left-side h5{
+    display: inline-block;
+}
+
+.check-marks{
+    /* padding-top: 3%; */
+    display: flex;
+    align-items: center;
+    /* display: inline-block; */
+ 
+}
+
+.section-1 .right-side{
+    width:50%;
+}
+
+@media (max-width:800px) {
+    body{  
+        
+        padding: 5px 5%;
+    }
+    .section-1
+    {
+       
+    }
+    .section-1 .left-side {
+        align-self: center;
+        line-height: 1.6;
+        font-size: 12px;
+        /* width: 80%; */
+        width: 45%;
+        
+    }
+    .check-marks{
+        
+        display: none;
+     
+    }
+    .section-1 .left-side form .pass{
+        display: none;
+   }
+   .btn-try{
+   width: 100%;
+
+   }
+    .section-1 .right-side {
+        /* width: 100%; */
+        width: 52%;
+    }
+
+}
