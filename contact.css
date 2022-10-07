@@ -1,0 +1,75 @@
+*{
+   box-sizing: border-box;
+}
+body{
+    padding: 0!important;
+    justify-content: center;
+    background-color: white;
+
+    
+}
+
+#main{
+    width: 100%;
+    min-height: 100vh;
+    padding: 1% 5%;
+    background-color: #FBF7EE;
+    margin: auto;
+}
+#main #middle{
+    text-align: center;
+    padding: 5%;
+    
+}
+div#getInTouch{
+    display: grid;
+    padding: 10px;
+    font-size: 1vw;
+    background-color:white;
+    border-radius: 20px;
+    grid-template-columns: auto auto ;
+    flex-wrap: wrap;
+    gap: 2%;
+    margin-bottom: 10%;
+}
+div#getInTouch .l{
+    border-radius: inherit;
+    padding: 5%;
+    background-color: #0b48a8;
+    color: white;
+}
+h1{
+    color: #0b48a8;
+}
+div#getInTouch .r{
+    padding: 2%;
+    width: 100%;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+.flex h6{
+    margin-left: 2%;
+    flex-grow: 1;
+}
+form input,textarea {
+    padding: 9px;
+    border: none;
+    border-bottom: 1px solid black;
+    background: transparent;
+    margin-block: 10px;
+}
+@media only screen and (max-width:800px) {
+    #main{
+        padding: 3% 3%;
+    }
+    div#getInTouch{
+        font-size: 2vw;
+        grid: none;
+    }
+    h6{
+        margin-block: 8px;
+    }
+    
+}
