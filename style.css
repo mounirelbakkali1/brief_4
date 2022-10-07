@@ -2,12 +2,19 @@
 
 *{
     box-sizing: border-box;
+    font-family: 'karla';
 }
+
+
 body{  
     background-color: #FBF7EE;
     font-family: 'Poppins', sans-serif;
-    padding: 5px 5%;
+    padding: 2% 5%;
     margin: 0;
+    line-height: 1.4;
+}
+body > div ,body section{
+    margin-block: 5%;
 }
 
 header{
@@ -112,8 +119,8 @@ div#logo {
 }
 #parent{
     width: 100%;
-    text-align: center;
     display: grid;
+    margin: 5% 0;
     grid-template-columns: 23% 23% 23% 23%;
     justify-content: space-between;
 
@@ -133,8 +140,101 @@ div#logo {
     margin-bottom: 0px;
 }
 .card p{
-    font-size: 11px;
+    font-size: 13px;
     color: darkgray;
+    
+}
+.section2{
+    display: grid;
+    grid-template-columns: 23% 23% 23% 23%;
+    justify-content: space-between;
+    font: size 20px;;
+}
+.cardbody{
+   
+    background-color: #FFF3D9;
+    width: 100%;
+    border: 1px solid grey;
+    padding: 5%;
+    
+}
+.cardbody img{
+    width: 100%;
+}
+.button {
+    background-color: transparent;
+    color: #0B48A8;
+    padding: 10px 5px;
+    text-align: center;
+    border-radius: 3px;
+    outline-color: #041c40;
+    outline-width: 0.5px;
+    outline: solid;
+    width: 100%;
+    font-size: 13px;
+    cursor: pointer;
+    border: none;
+}
+.button:hover{
+    background-color:#0b48a8;
+    outline: none;
+    color: white;
+    transition-duration: 0.4s;
+   
+}
+section#prices {
+    margin: 5% 0;
+}
+footer {
+    padding: 1% 0 5% 0;
+}
+.flx{
+    display: flex;
+    align-items: center;
+    margin: 5%;
+}
+.flx img{
+    width: 25px;
+    padding-right: 10px;
+}
+p {
+    font-size: 1.4vw;
+    margin: 9px 0;
+}
+#prices h5{
+    background-color:#13366D;
+    border: 0px solid ;
+    width: 33%;
+    font-size: x-small;
+    color: white;
+    text-align: center;
+    box-shadow:0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important;
+    padding: 10px 5px;
+    border-radius: 32px;
+
+}
+h4{
+    width: 100%;
+    font-size: 14px;
+    color: black;
+}
+.section2 #ads div{
+    box-sizing: border-box;
+    background-color: #FBF7EE;
+    width: 100%;
+    border: 1px solid grey;
+    padding: 22px;
+}
+
+#ads img{
+    width: 100%;
+}
+.cardbody #parag{
+    padding-top: 105px;
+}
+#parag2{
+    font-size: 45px;
+    color: #13366D;
 }
 @media only screen and (max-width: 500px){
     body{
@@ -148,7 +248,157 @@ div#logo {
         justify-content: space-between;
     
     }
+    .section2{
+        grid-template-columns: 48% 48%;
+        row-gap: 20px;
+    }
+    .cardbody{
+        text-overflow: ellipsis;
+        font-size: 4.5vw ;
+    }
+    .flx{
+        margin: 1%;
+    }
+    .flx img{
+        width: 25px;
+        padding-right: 10px;
+    }
+    p {
+        font-size: 2.8vw;
+    }
+}
 
+#parag3{
+    font-size: 15px;
+    margin: 10px;
+}
+@media only screen and (max-width: 900px) and (min-width:500px) {
+    .section2{
+        grid-template-columns: 30% 30% 30%;
+        row-gap: 20px;
+    }
+    .cardbody{
+        text-overflow: ellipsis;
+        font-size: 3.1vw;
+    }
+    .flx img{
+        width: 25px;
+        padding-right: 10px;
+    }
+    p{
+      font-size: 1.8vw;  
+    }
+    #parag2 {
+        font-size: 29px;
+        color: #13366D;
+    }
+    
+}
 
+.btn-try{
+    background-color:rgb(51, 51, 180);
+    border:1px solid black;
+    padding: 1vh 1vw;
+    font-size: 10px;
+    box-shadow: 1px 1px 4px #0a0a0a;
+    border-radius: 2px;
+
+    color: #FFF;
 
 }
+.section-1{
+    display: flex;
+    /* flex-flow: wrap; */
+    justify-content: space-between;
+    
+}
+
+.left-side div h1 {
+    /* font-size: 23px; */
+    font-size: 2.5vw;
+    color:#13366D ;
+    margin: 5px;
+}
+.par{
+    color: #A2A2A2;
+    font-size:1.5vw;
+    
+}
+.check-mark-2{
+    margin-left: 20px;
+}
+.section-1 .left-side{
+    align-self: center;
+    line-height: 1.6;
+    font-size: 12px;
+    width:43%;
+}
+.section-1 .left-side div {
+    width: 100%;
+
+}
+.section-1 .left-side form{
+    align-items: center;
+}
+.section-1 .left-side form .pass{
+     padding: 0.7vh 1.5vw;
+}
+.section-1 .left-side h5{
+    display: inline-block;
+}
+
+.check-marks{
+    /* padding-top: 3%; */
+    display: flex;
+    align-items: center;
+    /* display: inline-block; */
+ 
+}
+
+.section-1 .right-side{
+    width:50%;
+}
+
+@media (max-width:800px) {
+    body{  
+        
+        padding: 5px 5%;
+    }
+    .section-1
+    {
+       
+    }
+    .section-1 .left-side {
+        align-self: center;
+        line-height: 1.6;
+        font-size: 12px;
+        /* width: 80%; */
+        width: 45%;
+        
+    }
+    .check-marks{
+        
+        display: none;
+     
+    }
+    .section-1 .left-side form .pass{
+        display: none;
+   }
+   .btn-try{
+   width: 100%;
+
+   }
+    .section-1 .right-side {
+        /* width: 100%; */
+        width: 52%;
+    }
+    
+    .cardbody #parag {
+        padding-top: 10%;
+    }
+    .flx p{
+        
+    }
+
+}
+
